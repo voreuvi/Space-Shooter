@@ -4,6 +4,11 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.mygdx.game.actors.ActorPlayer;
 
+//This entire time I've been trying to use hit detection without actors;
+//Torture, totally forgot about how much actors simplify the process of
+//  managing sprites.
+
+
 public class GameScreen implements Screen {
 
     private Stage scrStage;
@@ -18,7 +23,7 @@ public class GameScreen implements Screen {
 
     @Override
     public void render(float delta) {
-
+        
     }
 
     @Override

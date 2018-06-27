@@ -7,6 +7,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.Disposable;
 
+//ResourceManager is responsible for loading all the sprites,
+// textures, etc, just to keep the Game clutter free
+
+
 
 public class ResourceManager implements Disposable {
 

@@ -1,0 +1,54 @@
+//This file serves as a documentation of my woes in relation to this project
+To preface, I utilized two tutorials online
+
+    Ethan Kuster's Space Shooter Tutorial, was a bit different than what I had in mind
+        utilized vectors, and designed around the player moving both on X and Y
+        Regardless, helped solidify understanding of some processes in libgdx
+        (https://www.youtube.com/watch?v=pmPMZElfNsU&list=PLJwMWCwP3Zt-_u8lDXgAwwzFUo2lmB7Hh)
+
+    GameFromScratch's youtube and web tutorials were also a great introduction to libgdx,
+        though a lot of the content was deprecated, or outdated with better methodologies
+        sometimes the comments were more helpful than the tutorials themsleves
+
+    A LiveStreamer which videos were not archived, I was one of the few viewers,
+        encouraged and took questions, and pointed me in the right direction
+        he pointed me to a github repo for a shooter similar to mine (again used X & Y)
+        and explained some useful libgdx functions featured in it (the importance of actors)
+        (https://github.com/debdattabasu/)
+        Liverstreamer's content should be called something like (Hour of Code 2 - Libgdx)
+            (if archived)
+
+    Understanding how to handle multiple projectiles being fired
+        initially tried calling a sprite over, and over, and over,
+        but this was clearly inefficient, and resource-intensive
+        (libgdx would grind to a buttery smooth ~5fps)
+
+        Eventually decided on using an actor to handle projectiles
+        as seen in the Space-Shooter github repo, but I was still-
+        encountering some issues
+
+    Actors in general saved me a lot of time, with a lot of features cutting down on bloat
+        in paticular, inheriting one set of flags/variables from a base class
+        this could be expanded in many ways, for instance multiple types of powerups
+            (changing amount of projectiles, altering movement speed)
+
+    I realized early on that the MainGame class would be chock full of texture/sprite calls,
+        and I was trying to find a way to mitigate this. It eventually became clear when it was-
+        checking out some of the urls from the Hour of Code 2 livestream.
+        (ResourceManager.class)
+
+    Deciding on how Screens should be called too was a bit puzzling, undecided whether I should use-
+        calling the screens based on an assigned number i.e. if(true){SetScreen(2))
+
+    One of the biggest challenges was trying to get GitKraken to work on Linux, it really does not-
+        like Linux. However, that's more of a personal issue. Eventually gave up on GitKraken entirely,
+        and just used the CLI git client, which worked perfectly, and could be fed flags which made
+        git control pretty intuitive and simple.
+
+    Gradle was another problem with Linux, performing a git pull and opening the project would break Gradle,
+        which had to be manually imported, and left me scratching my head for many hours
+        it eventually became clear that IntelliJ uses an outdated version of Gradle which likes to brick-
+        itself when reading from a newer build.gradle
+
+
+//

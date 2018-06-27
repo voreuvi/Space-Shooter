@@ -8,6 +8,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.screens.GameOverScreen;
 import com.mygdx.game.screens.GameScreen;
 
+
+//Had to restart the project after realizing what I was doing
+// 	was absolutely unintuitive
 //This class is self-explanatory
 
 
@@ -15,17 +18,12 @@ import com.mygdx.game.screens.GameScreen;
 
 public class MainGame extends Game {
 
-	/*Put Screens Here i.e.
-	private AsteroidsGameOverScreen mGameOverScreen
-	private ResourceManager mResources
-	private AsteroidsGameScreen mGameScreen*/
-
 	SpriteBatch batch;
 	Texture img;
 
 	private GameOverScreen scrGameOverScreen;
 	private GameScreen scrGameScreen;
-	private ResourceManager scrResources;
+	private ResourceManager scrResources; //Texture,
 
 	public static MainGame scrInstance;
 
@@ -51,12 +49,7 @@ public class MainGame extends Game {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		batch.begin();
-
-
-
-
-
-
+		//Add render blocks
 		batch.end();
 	}
 	
